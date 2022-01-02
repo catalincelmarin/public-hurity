@@ -127,7 +127,7 @@ header #hero {
   z-index: 1;
   background: #1e304d;
   background: linear-gradient(160deg, #1E304D 12%, #142033 88%);
-  padding: 96px 120px;
+  padding: 96px 120px !important;
   display: flex;
   align-items: center;
   border: solid #1E304D 1px;
