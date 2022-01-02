@@ -59,11 +59,16 @@
 
 html {
   font-family: "Tajawal", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
 }
 @media only screen and (min-width: 1920px) {
   html {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -71,6 +76,10 @@ h1, h2, h3, h4 {
   font-family: "El Messiri", sans-serif;
   line-height: 1.2em;
   font-size: 2.3rem;
+}
+
+button, input, textarea {
+  font-family: "Tajawal", sans-serif, sans-serif;
 }
 
 #topbg {
@@ -513,6 +522,7 @@ main {
   align-self: flex-end;
   padding: 0.5rem 2rem;
   margin-top: 1.2rem;
+  font-family: "Tajawal", sans-serif, sans-serif;
 }
 #contact .boxed > div {
   display: flex;
@@ -582,7 +592,7 @@ footer div .footer-item {
 
 button.btn {
   line-height: 1.2em;
-  padding-top: 0.6em;
+  font-family: "Tajawal", sans-serif, sans-serif;
 }
 
 .btn {
@@ -601,6 +611,7 @@ button.btn {
   justify-content: center;
   font-weight: bold;
   font-size: 1rem;
+  font-family: "Tajawal", sans-serif, sans-serif;
 }
 
 .txt {
