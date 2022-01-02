@@ -183,7 +183,6 @@ main {
 #intro article {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   padding: 5em 0 0 0;
 }
 #intro article:nth-of-type(2) {
@@ -224,7 +223,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 4rem;
+  padding-left: 6rem;
   padding-right: 6rem;
 }
 #intro article div.info h2 {
@@ -309,74 +308,113 @@ main {
 #industries .jumbo article {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 2em;
-  justify-content: space-evenly;
+}
+@media only screen and (min-width: 1440px) {
+  #industries .jumbo article {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 #industries .jumbo article span:nth-of-type(1) {
+  display: block;
+  height: 3.5em;
+  width: 35%;
   position: relative;
+}
+@media only screen and (min-width: 1440px) {
+  #industries .jumbo article span:nth-of-type(1) {
+    width: auto;
+  }
 }
 #industries .jumbo article span:nth-of-type(1)::before {
   content: "";
   position: absolute;
-  top: -1.4em;
-  left: -3em;
+  top: -1.2em;
+  left: -3.7em;
   display: inline-block;
-  width: 2.7em;
-  height: 2.7em;
+  width: 2.8em;
+  height: 2.8em;
   background-image: url("../assets/images/lbl.hospitality.svg");
-  background-size: 150%;
+  background-size: 100%;
   margin-right: 0.3em;
 }
 #industries .jumbo article span:nth-of-type(2) {
+  display: block;
+  height: 3.5em;
+  width: 35%;
   position: relative;
+}
+@media only screen and (min-width: 1440px) {
+  #industries .jumbo article span:nth-of-type(2) {
+    width: auto;
+  }
 }
 #industries .jumbo article span:nth-of-type(2)::before {
   content: "";
   position: absolute;
-  top: -1.4em;
-  left: -3em;
+  top: -1.2em;
+  left: -3.7em;
   display: inline-block;
-  width: 2.7em;
-  height: 2.7em;
+  width: 2.8em;
+  height: 2.8em;
   background-image: url("../assets/images/lbl.foodbev.svg");
-  background-size: 150%;
+  background-size: 100%;
   margin-right: 0.3em;
 }
 #industries .jumbo article span:nth-of-type(3) {
+  display: block;
+  height: 3.5em;
+  width: 35%;
   position: relative;
+}
+@media only screen and (min-width: 1440px) {
+  #industries .jumbo article span:nth-of-type(3) {
+    width: auto;
+  }
 }
 #industries .jumbo article span:nth-of-type(3)::before {
   content: "";
   position: absolute;
-  top: -1.4em;
-  left: -3em;
+  top: -1.2em;
+  left: -3.7em;
   display: inline-block;
-  width: 2.7em;
-  height: 2.7em;
+  width: 2.8em;
+  height: 2.8em;
   background-image: url("../assets/images/lbl.events.svg");
-  background-size: 150%;
+  background-size: 100%;
   margin-right: 0.3em;
 }
 #industries .jumbo article span:nth-of-type(4) {
+  display: block;
+  height: 3.5em;
+  width: 35%;
   position: relative;
+}
+@media only screen and (min-width: 1440px) {
+  #industries .jumbo article span:nth-of-type(4) {
+    width: auto;
+  }
 }
 #industries .jumbo article span:nth-of-type(4)::before {
   content: "";
   position: absolute;
-  top: -1.4em;
-  left: -3em;
+  top: -1.2em;
+  left: -3.7em;
   display: inline-block;
-  width: 2.7em;
-  height: 2.7em;
+  width: 2.8em;
+  height: 2.8em;
   background-image: url("../assets/images/lbl.retail.svg");
-  background-size: 150%;
+  background-size: 100%;
   margin-right: 0.3em;
 }
 
 #map {
   display: flex;
   padding: 10em 0;
-  padding-left: 5em;
+  padding-left: 6rem;
 }
 #map h2 {
   color: #FAFAF5;
@@ -384,6 +422,9 @@ main {
 }
 #map article {
   width: 50%;
+}
+#map article.data {
+  padding-right: 6rem;
 }
 #map article ul {
   padding: 2em 4em 0 1em;
@@ -396,33 +437,57 @@ main {
 
 #values {
   display: flex;
+  flex-wrap: wrap;
 }
 #values > div {
-  width: 50%;
+  width: 100%;
 }
 #values > div:first-of-type {
   background-image: url("../assets/images/bg.blue.png");
-  height: 70vh;
-  background-size: cover;
-  background-position: top right;
+  height: 100vh;
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 1440px) {
+  #values > div:first-of-type {
+    width: 60%;
+  }
 }
 #values > div:last-of-type {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  margin-top: 10em;
+  padding-left: 10em;
+}
+@media only screen and (min-width: 1440px) {
+  #values > div:last-of-type {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #values > div:last-of-type {
+    margin-top: 0;
+  }
 }
 #values > div:last-of-type h2 {
   color: #FAFAF5;
-  margin-left: -0.5em;
+  text-align: left;
+  margin-left: -1.8rem;
 }
 #values > div:last-of-type ul {
   margin-top: 1.5em;
 }
 #values > div:last-of-type ul li:before {
-  width: 2.7em;
-  height: 2.7em;
-  left: -1.5em;
+  width: 2.8em;
+  height: 2.8em;
+  left: -1.8em;
+  top: 0.5em;
+}
+#values > div:last-of-type ul li:last-of-type:before {
+  top: 0.8em;
 }
 #values > div:last-of-type ul li:nth-of-type(1) {
   position: relative;
@@ -485,7 +550,7 @@ main {
   z-index: 1;
   background: #1e304d;
   background: linear-gradient(160deg, #1E304D 12%, #142033 88%);
-  padding: 4em 7em;
+  padding: 4em 7em !important;
   border: solid #1E304D 1px;
 }
 @media only screen and (min-resolution: 190dpi) {
@@ -589,7 +654,7 @@ footer div .footer-item {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 500px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 1440px) {
