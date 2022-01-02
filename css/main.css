@@ -116,7 +116,7 @@ header #hero {
   height: 715px;
   font-size: 16px;
   display: inline-block;
-  padding: 0.8em 1.1em 0.5em 1em;
+  padding: 0.5rem 1.1em 0.5em 1em;
   border-radius: 5em;
   border: none;
   outline: 0;
@@ -131,6 +131,11 @@ header #hero {
   display: flex;
   align-items: center;
   border: solid #1E304D 1px;
+}
+@media only screen and (min-resolution: 190dpi) {
+  header #hero {
+    padding: 0.8rem 1.1em 0.5em 1em;
+  }
 }
 header #hero .dots {
   background-image: url("../assets/images/hero.dots.svg");
@@ -147,6 +152,9 @@ header #hero .dots {
 }
 header #hero article {
   width: 50%;
+}
+header #hero article:last-child {
+  height: 100%;
 }
 header #hero article h1 {
   font-weight: bold;
@@ -465,7 +473,7 @@ main {
   min-height: 415px;
   font-size: 16px;
   display: inline-block;
-  padding: 0.8em 1.1em 0.5em 1em;
+  padding: 0.5rem 1.1em 0.5em 1em;
   border-radius: 5em;
   border: none;
   outline: 0;
@@ -479,6 +487,11 @@ main {
   background: linear-gradient(160deg, #1E304D 12%, #142033 88%);
   padding: 4em 7em;
   border: solid #1E304D 1px;
+}
+@media only screen and (min-resolution: 190dpi) {
+  #contact .boxed {
+    padding: 0.8rem 1.1em 0.5em 1em;
+  }
 }
 #contact .boxed form {
   display: flex;
@@ -597,7 +610,7 @@ button.btn {
 
 .btn {
   display: inline-block;
-  padding: 0.8em 1.1em 0.5em 1em;
+  padding: 0.5rem 1.1em 0.5em 1em;
   border-radius: 5em;
   border: none;
   outline: 0;
@@ -612,6 +625,11 @@ button.btn {
   font-weight: bold;
   font-size: 1rem;
   font-family: "Tajawal", sans-serif, sans-serif;
+}
+@media only screen and (min-resolution: 190dpi) {
+  .btn {
+    padding: 0.8rem 1.1em 0.5em 1em;
+  }
 }
 
 .txt {
