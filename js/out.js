@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(el);
         el.style.display = "none";
       });
+      console.log(href);
       document.querySelector(href).style.display = "block";
     });
   });
