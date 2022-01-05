@@ -298,8 +298,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding: 0 2rem;
+}
+@media only screen and (min-width: 1024px) {
+  #intro article div.info {
+    padding: 0 6rem;
+  }
 }
 #intro article div.info h2 {
   position: relative;
@@ -491,8 +495,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
-  padding: 10em 0;
-  padding-left: 6rem;
+  padding: 10rem 0;
 }
 @media only screen and (min-width: 1440px) {
   #map {
@@ -500,15 +503,27 @@ main {
     flex-direction: row;
   }
 }
+@media only screen and (min-width: 1024px) {
+  #map {
+    padding-left: 6rem;
+  }
+}
 #map h2 {
   color: #FAFAF5;
-  font-size: 2.2em;
+  font-size: 2.3em;
+}
+@media only screen and (min-width: 1024px) {
+  #map h2 {
+    font-size: 2.2em;
+  }
 }
 #map article {
   width: 100%;
 }
-#map article.data {
-  padding-right: 6rem;
+@media only screen and (min-width: 1024px) {
+  #map article.data {
+    padding-right: 6rem;
+  }
 }
 #map article ul {
   padding: 2em 4em 0 1em;
@@ -552,12 +567,17 @@ main {
   align-items: center;
   flex-direction: column;
   margin-top: 10em;
-  padding-left: 10em;
+  padding-left: 4rem;
 }
 @media only screen and (min-width: 1440px) {
   #values > div:last-of-type {
     width: 40%;
     align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #values > div:last-of-type {
+    padding-left: 10em;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -619,8 +639,13 @@ main {
 }
 
 #contact {
-  padding: 8em 0;
+  padding: 8em 2em;
   max-width: 1064px;
+}
+@media only screen and (min-width: 1024px) {
+  #contact {
+    padding: 8em 0;
+  }
 }
 #contact h4 {
   color: #2E9942;
@@ -637,13 +662,13 @@ main {
   outline: 0;
   font-weight: bold;
   border-bottom-left-radius: 0 !important;
+  padding: 3em 2em !important;
   border-radius: 3em;
   border-bottom-left-radius: 0.2em;
   width: 100%;
   z-index: 1;
   background: #1e304d;
   background: linear-gradient(160deg, #1E304D 12%, #142033 88%);
-  padding: 4em 7em !important;
   border: solid #1E304D 1px;
 }
 @media only screen and (min-resolution: 190dpi) {
@@ -656,6 +681,29 @@ main {
     border-radius: 5em;
   }
 }
+@media only screen and (min-width: 1024px) {
+  #contact .boxed {
+    padding: 4em 7em !important;
+  }
+}
+#contact .boxed > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1024px) {
+  #contact .boxed > div:first-of-type {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#contact .boxed > div:first-of-type h4, #contact .boxed > div:first-of-type div {
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  #contact .boxed > div:first-of-type h4, #contact .boxed > div:first-of-type div {
+    text-align: left;
+  }
+}
 #contact .boxed form {
   display: flex;
   flex-direction: column;
@@ -663,9 +711,20 @@ main {
 #contact .boxed form .inputs {
   display: flex;
   margin-top: 1em;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1024px) {
+  #contact .boxed form .inputs {
+    flex-direction: row;
+  }
 }
 #contact .boxed form .inputs div {
-  width: 50%;
+  width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  #contact .boxed form .inputs div {
+    width: 50%;
+  }
 }
 #contact .boxed form .inputs div input {
   margin: 0.6rem 0;
@@ -684,16 +743,29 @@ main {
 }
 #contact .boxed form .inputs div:last-child {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  height: 10em;
+  padding-top: 1em;
+}
+@media only screen and (min-width: 1024px) {
+  #contact .boxed form .inputs div:last-child {
+    padding-top: 0;
+    justify-content: flex-end;
+  }
 }
 #contact .boxed form .inputs div textarea {
   resize: none;
   outline: none;
-  width: 90%;
+  width: 100%;
   color: #A3A3A0;
   font-size: 0.6rem;
   padding: 1.7rem;
   border-radius: 2rem;
+}
+@media only screen and (min-width: 1024px) {
+  #contact .boxed form .inputs div textarea {
+    width: 90%;
+  }
 }
 #contact .boxed form button.btn {
   font-size: 0.9rem;
