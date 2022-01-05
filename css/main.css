@@ -81,6 +81,7 @@ h1, h2, h3, h4 {
 button, input, textarea {
   font-family: "Tajawal", sans-serif, sans-serif;
   outline: none;
+  font-size: 16px;
 }
 
 #topbg {
@@ -561,20 +562,15 @@ main {
 }
 #values > div:last-of-type {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: flex-start;
   margin-top: 10em;
   padding-left: 4rem;
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   #values > div:last-of-type {
     width: 40%;
     align-items: flex-start;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #values > div:last-of-type {
     padding-left: 10em;
   }
 }
@@ -585,7 +581,6 @@ main {
 }
 #values > div:last-of-type h2 {
   color: #FAFAF5;
-  text-align: left;
   margin-left: -1.8rem;
 }
 #values > div:last-of-type ul {
@@ -607,6 +602,7 @@ main {
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url("../assets/images/lbl.cup.svg");
+  background-size: cover;
 }
 #values > div:last-of-type ul li:nth-of-type(2) {
   position: relative;
@@ -615,6 +611,7 @@ main {
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url("../assets/images/lbl.pen.svg");
+  background-size: cover;
 }
 #values > div:last-of-type ul li:nth-of-type(3) {
   position: relative;
@@ -623,6 +620,7 @@ main {
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url("../assets/images/lbl.books.svg");
+  background-size: cover;
 }
 #values > div:last-of-type ul li:nth-of-type(4) {
   position: relative;
@@ -631,6 +629,7 @@ main {
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url("../assets/images/lbl.tech.svg");
+  background-size: cover;
 }
 #values > div:last-of-type ul li {
   padding: 1.2em 1.5em;
@@ -718,14 +717,21 @@ main {
 }
 #contact .boxed form .inputs div {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 1024px) {
   #contact .boxed form .inputs div {
     width: 50%;
   }
+  #contact .boxed form .inputs div:first-of-type {
+    padding-right: 2em;
+  }
 }
 #contact .boxed form .inputs div input {
   margin: 0.6rem 0;
+  padding-left: 2em;
   width: 100%;
 }
 #contact .boxed form .inputs div input:first-of-type {
@@ -736,7 +742,7 @@ main {
 }
 #contact .boxed form .inputs div input::placeholder {
   color: #A3A3A0;
-  font-size: 0.6rem;
+  font-size: 1rem;
   padding: 0.7em 0 1em 1em;
 }
 #contact .boxed form .inputs div:last-child {
@@ -755,14 +761,14 @@ main {
   resize: none;
   outline: none;
   width: 100%;
-  color: #A3A3A0;
-  font-size: 0.6rem;
+  height: 100%;
+  overflow: hidden;
   padding: 1.7rem;
   border-radius: 2rem;
 }
 @media only screen and (min-width: 1024px) {
   #contact .boxed form .inputs div textarea {
-    width: 90%;
+    width: 100%;
   }
 }
 #contact .boxed form button.btn {
